@@ -8,6 +8,7 @@ export default ({ languages, lang }) => {
     .use(i18nextXHRBackend)
     .init({
       // fallbackLng: languages[0],
+      languages,
       fallbackLng: false,
       lng: lang,
       defaultNS: 'common',

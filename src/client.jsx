@@ -5,9 +5,9 @@ import { hydrate } from 'react-dom';
 import 'stores/i18n-client';
 import { configureClientI18n } from 'stores';
 import Layout from 'components/common/layout';
-import languages from './languages';
+import languages, { initialLanguage } from './languages';
 
-configureClientI18n({ languages });
+configureClientI18n({ languages, lang: initialLanguage });
 
 const renderApp = () => {
   hydrate(
